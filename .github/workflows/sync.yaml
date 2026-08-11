@@ -2,7 +2,7 @@ name: Upstream Sync
 
 permissions:
   contents: write
-  workflows: write # 允许更新上游同步过来的 workflow 文件变更
+  workflows: write
 
 on:
   schedule:
