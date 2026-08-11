@@ -2,8 +2,11 @@ name: Upstream Sync
 
 permissions:
   contents: write
+  workflows: write # 允许更新上游同步过来的 workflow 文件变更
 
 on:
+  schedule:
+    - cron: "0 0 * * *" # every day
   workflow_dispatch:
 
 jobs:
